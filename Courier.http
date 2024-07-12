@@ -1,0 +1,41 @@
+GET http://localhost:2708/courier/
+
+###
+GET http://localhost:2708/courier/executive/Mani
+
+###
+GET http://localhost:2708/courier/address/Salem
+
+###
+GET http://localhost:2708/courier/receiver/Aishwarya
+
+###
+POST http://localhost:2708/courier/
+Content-Type: application/json
+
+{
+    "receiverName":"Aishwarya",
+    "parcelItemName":"phone",
+    "receiverAddress": "Salem",
+    "receiverContact": 9134567890,
+    "itemPrice": 100000.56,
+    "itemStatus": "transmit",
+    "executiveName": "Vinu"
+}
+
+###
+PUT http://localhost:2708/courier/
+Content-Type: application/json
+
+{
+    "receiverName":"Aishwarya",
+    "parcelItemName":"phone",
+    "receiverAddress": "Namakkal",
+    "receiverContact": 9134567890,
+    "itemPrice": 100000.56,
+    "itemStatus": "transmit",
+    "executiveName": "Vinu"
+}
+
+###
+DELETE http://localhost:2708/courier/2
